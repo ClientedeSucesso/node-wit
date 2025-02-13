@@ -13,13 +13,17 @@ if (!WIT_AI_TOKEN) {
     process.exit(1);
 }
 
+// ✅ ROTA PARA DIAGNÓSTICO (CORRIGE O ERRO "Cannot GET /")
+app.get("/", (req, res) => {
+    res.json({ message: "🚀 Servidor rodando com sucesso!" });
+});
+
 // 📌 Criando a Rota para Receber as Mensagens da UmblerTalk
 app.post("/webhook", async (req, res) => {
     console.log("📩 Webhook foi acionado. Recebendo dados...");
 
     try {
         console.log("📩 Requisição Recebida:", req.body);
-
         const { mensagem, telefone, nome } = req.body;
 
         if (!mensagem || !telefone || !nome) {
