@@ -22,13 +22,14 @@
   "author": "The Wit Team <help@wit.ai>",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "dotenv": "^16.4.7",
     "express": "^4.16.2",
     "https-proxy-agent": "^5.0.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.14",
     "mic": "^2.1.2",
-    "uuid": "^9.0.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0"
   },
   "engines": {
     "node": ">=16.0.0"
