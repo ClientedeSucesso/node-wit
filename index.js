@@ -9,10 +9,10 @@ app.use(bodyParser.json());
 
 // Rota de teste
 app.get('/', (req, res) => {
-    res.send('🚀 Servidor rodando com sucesso no Render e no Codespaces!');
+    res.send('🚀 Servidor rodando com sucesso no Render!');
 });
 
-// Inicia o servidor na porta correta (necessário para o Render)
+// Inicia o servidor na porta correta
 app.listen(PORT, () => {
     console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });
